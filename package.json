@@ -5,10 +5,34 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "devDependencies": {
+    "parcel": "^2.8.3",
     "vite": "^4.3.0"
-  }
+  },
+  "default": "index.html",
+  "dependencies": {
+    "esbuild": "^0.17.17",
+    "lodash": "^4.17.21",
+    "nanoid": "^3.3.6",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.23",
+    "rollup": "^3.20.6",
+    "source-map-js": "^1.0.2",
+    "three": "^0.151.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milan44i/Portfolio-website.git"
+  },
+  "author": "Milan Stankovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milan44i/Portfolio-website/issues"
+  },
+  "homepage": "https://github.com/milan44i/Portfolio-website#readme",
+  "description": ""
 }
