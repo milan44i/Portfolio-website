@@ -67,13 +67,15 @@ Array(200).fill().forEach(addStar);
 // Background
 
 const spaceTexture = new THREE.TextureLoader().load(
-  "https://github.com/milan44i/Portfolio-website/blob/master/space.jpg"
+  "https://raw.githubusercontent.com/milan44i/Portfolio-website/master/space.jpg"
 );
 scene.background = spaceTexture;
 
 // Avatar
 
-const milanTexture = new THREE.TextureLoader().load("milan.png");
+const milanTexture = new THREE.TextureLoader().load(
+  "https://raw.githubusercontent.com/milan44i/Portfolio-website/master/milan.png"
+);
 
 const milan = new THREE.Mesh(
   new THREE.BoxGeometry(3.9, 3, 3),
@@ -84,8 +86,12 @@ scene.add(milan);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("normal.jpg");
+const moonTexture = new THREE.TextureLoader().load(
+  "https://raw.githubusercontent.com/milan44i/Portfolio-website/master/moon.jpg"
+);
+const normalTexture = new THREE.TextureLoader().load(
+  "https://raw.githubusercontent.com/milan44i/Portfolio-website/master/normal.jpg"
+);
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
